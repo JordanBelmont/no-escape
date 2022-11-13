@@ -1,0 +1,92 @@
+.abattoir-body {
+   background-color: black;
+}
+
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+
+.abattoir-body {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   padding: 30px 10%;
+}
+
+   .abattoir-ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+
+   .abattoir-ul li {
+      align-items: center;
+      padding-left: 50px;
+   }
+
+   .abattoir-link {
+      font-family: SpecialElite-Regular;
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 10px;
+      color: #f0f8ff;
+      text-decoration: none;
+      align-items: center;
+      position: relative;
+      display: inline-block;
+   }
+
+   .abattoir-link:before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 4px;
+      top: calc(50% - 1.5px);
+      right: 0;
+      background: #A01110;
+      transition: 0.2s ease;
+      } 
+
+   .abattoir-link:hover:before {
+      left: -2px;
+      width: 100%;
+   }
+
+   @keyframes animate {
+      0% {
+         opacity: 0;
+         transform: translateY(-10px);
+      }
+      100% {
+         opacity: 1;
+         transform: translateY(0);
+      }
+   }
+
+   .abattoir-logo {
+      width: 600px;
+   }
+
+   .abattoir-button {
+      font-family: SpecialElite-Regular;
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 10px;
+      color: #f0f8ff;
+      border-color: #f0f8ff;
+      border-style: solid;
+      background-color: black;
+      /* background-color: #A01110; */
+      width: 150px;
+      height: 45px;
+   }
+
+   .abattoir-button:hover {
+      background-color: #A01110;
+      cursor: pointer;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+   }
+   
+}
