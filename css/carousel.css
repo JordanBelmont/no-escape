@@ -2,8 +2,8 @@
    width: 75%;
    margin: 100px auto;
    padding: 32px;
-   font-family: SpecialElite-Regular;
-   font-size: 18px;
+   font-family: Xtype-Regular;
+   font-size: 20px;
    line-height: 1.6;
    color: white;
    background-color: black;
@@ -13,11 +13,15 @@
    gap: 32px;
 }
 
+.story {
+   text-align: center;
+}
+
 .stats {
    padding: 40px 0px;
    display: flex;
    gap: 300px;
-   font-size: 20px;
+   font-size: 25px;
 }
 
 .stat-title {
@@ -29,7 +33,6 @@
    flex-direction: column;
    align-items: center;
    justify-content: space-between;
-   margin: 50px 0px;
 }
 
 .btn-direction {
@@ -65,11 +68,15 @@ btn-icon {
 }
 
 @keyframes pulse-down {
-   to {transform:translateY(10px);}
+   to {
+      transform:translateY(10px);
+   }
 }
 
 @keyframes pulse-up {
-   to {transform:translateY(-10px);}
+   to {
+      transform:translateY(-10px);
+   }
 }
 
 .btn-icon-up:hover,
@@ -109,6 +116,10 @@ btn-icon {
 
 .skull {
    width: 25px;
+}
+
+.book {
+   margin-bottom: 30px;
 }
 
 

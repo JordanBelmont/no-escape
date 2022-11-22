@@ -6,6 +6,16 @@ body {
    background-color: black;
 }
 
+h1 {
+   font-family: Xtype-Bold;
+   font-size: 35px;
+   font-weight: bold;
+   letter-spacing: 10px;
+   color: #f0f8ff;
+   text-align: center;
+   margin: 30px;
+}
+
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
 
@@ -30,7 +40,7 @@ body {
    }
 
    .abattoir-link {
-      font-family: SpecialElite-Regular;
+      font-family: Xtype-Bold;
       font-size: 25px;
       font-weight: bold;
       letter-spacing: 10px;
@@ -45,7 +55,7 @@ body {
       content: '';
       position: absolute;
       width: 0;
-      height: 4px;
+      height: 8px;
       top: calc(50% - 1.5px);
       right: 0;
       background: #A01110;
@@ -69,28 +79,6 @@ body {
    }
 
    .abattoir-logo {
-      width: 600px;
+      width: 35em;
    }
-
-   .abattoir-button {
-      font-family: SpecialElite-Regular;
-      font-size: 25px;
-      font-weight: bold;
-      letter-spacing: 10px;
-      color: #f0f8ff;
-      border-color: #f0f8ff;
-      border-style: solid;
-      background-color: black;
-      /* background-color: #A01110; */
-      width: 150px;
-      height: 45px;
-   }
-
-   .abattoir-button:hover {
-      background-color: #A01110;
-      cursor: pointer;
-      transition: all 1s ease;
-      -webkit-transition: all 1s ease;
-   }
-   
 }

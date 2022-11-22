@@ -1,0 +1,11 @@
+@font-face {
+   font-family: "XType-regular";
+   font-weight: normal;
+   src: url(/fonts/XTypewriter-Regular.ttf) format("truetype");
+}
+
+@font-face {
+   font-family: "XType-bold";
+   font-weight: normal;
+   src: url(/fonts/XTypewriter-Bold.ttf) format("truetype");
+}
