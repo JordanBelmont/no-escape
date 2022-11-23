@@ -2,7 +2,6 @@
    width: 75%;
    margin: 100px auto;
    padding: 32px;
-   font-family: Xtype-Regular;
    font-size: 20px;
    line-height: 1.6;
    color: white;
@@ -24,10 +23,6 @@
    font-size: 25px;
 }
 
-.stat-title {
-   align-self:stretch;
-}
-
 .text-wrapper {
    display: flex;
    flex-direction: column;
@@ -35,7 +30,7 @@
    justify-content: space-between;
 }
 
-.btn-direction {
+.arrow-direction {
    background: none;
    color: rgb(255, 255, 255);
    border: none;
@@ -48,23 +43,16 @@
    justify-content: center;
 }
 
-.up {
-   top: 0;
+.previous {
+   top: 0%;
    left: 50%;
    transform: translate(-50%, -50%);
 }
 
-.down {
+.next {
    bottom: 0;
    right: 50%;
    transform: translate(50%, 50%);
-}
-
-btn-icon {
-   width: 40px;
-   height: 40px;
-   stroke: red;
-   transition: all 3s ease-in-out;
 }
 
 @keyframes pulse-down {
@@ -79,15 +67,15 @@ btn-icon {
    }
 }
 
-.btn-icon-up:hover,
-.btn-icon-up:focus,
-.btn-icon-up:active {
+.btn-icon-previous:hover,
+.btn-icon-previous:focus,
+.btn-icon-previous:active {
    animation: pulse-down 0.3s linear infinite alternate;
 }
 
-.btn-icon-down:hover,
-.btn-icon-down:focus,
-.btn-icon-down:active {
+.btn-icon-next:hover,
+.btn-icon-next:focus,
+.btn-icon-next:active {
    animation: pulse-down 0.3s linear infinite alternate;
 }
 
@@ -101,15 +89,19 @@ btn-icon {
 }
 
 .dot {
-   height: 12px;
-   width: 12px;
-   background-color: black;
-   border: 2px solid red;
+   height: 16px;
+   width: 16px;
+   background-color: rgb(0, 0, 0);
+   border: 2px solid #9C1010;
    border-radius: 50%;
    cursor: pointer;
 }
 
-.title {
+.active {
+   background-color: #9C1010;
+}
+
+.room-title {
    font-size: 70px;
    margin-bottom: 40px;
 }

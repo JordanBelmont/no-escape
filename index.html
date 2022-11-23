@@ -9,6 +9,7 @@
    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
    <link rel="stylesheet" href="css/style.css">
+   <script defer src="javascript/script.js"></script>
 
    <title>Abattoir Inc</title>
 </head>
@@ -33,61 +34,36 @@
 
    <div class="carousel">
       <div class="image-container">
-         <img class="toybox" src="images/Toy-Box.png" alt="Toy Box Escape Room" />
+         <img class="carousel-img" id="image" />
       </div>
-      <div class="text-wrapper">
-         <p class="title">Toy Box</p>
-         <p class="story">
-            For weeks, reports of the serial killer known as "The Toyman" have flooded news outlets,
-            the last thing you ever expected was to wind up as one of his victims.
-            <br><br>
-            Trapped in his labyrinth of
-            building blocks, ball pits and ragged toys, you must escape from this nightmare.
+      <div class="room-wrapper">
+         <p class="room-title" id="title"></p>
+         <p class="room-story" id="story">
          </p>
 
          <div class="stats">
-            <p class="stat-title">
-               Difficulty
-               <br><br>
-               Fear Factor
-               <br><br>
-               Time Limit
-               <br><br>
-               Players
+            <p class="room-stat" id="stat">
             </p>
-            <div class="stat-answer">
-               <img class="skull" src="/icons/skull.png"><img class="skull" src="/icons/skull.png"><img class="skull"
-                  src="/icons/skull.png">
-               <br><br>
-               <img class="skull" src="/icons/skull.png"><img class="skull" src="/icons/skull.png"><img class="skull"
-                  src="/icons/skull.png"><img class="skull" src="/icons/skull.png">
-               <br><br>
-               60 mins
-               <br><br>
-               1-6
+            <div class="room-stat-answer" id="rating">
             </div>
          </div>
-
+         <button class="arrow-direction previous" id="previous">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+               stroke="currentColor" class="btn-icon-previous">
+               <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+            </svg>
          </button>
-         <a class="abattoir-link glitch" data-text="Book" href="#">Book</a>
-         </button>
+         <button class="arrow-direction next" id="next">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+               stroke="currentColor" class="btn-icon-next">
+               <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+            </svg>
       </div>
-      <button class="btn-direction up">
-         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="btn-icon-up">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
-         </svg>
-
-      </button>
-      <button class="btn-direction down">
-         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="btn-icon-down">
-            <path stroke-linecap="round" stroke-linejoin="round"
-               d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
-         </svg>
    </div>
-
-
+   </div>
+   <hr>
 </body>
 
 <footer>
