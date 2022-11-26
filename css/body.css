@@ -1,7 +1,6 @@
 body {
    background-color: black;
    color: #f0f8ff;
-   text-align: center;
    font-family: Xtype-Regular;
 }
 
@@ -9,9 +8,9 @@ body {
    background-color: black;
 }
 
-h1 {
+.title {
    font-family: Xtype-Bold;
-   font-size: 25px;
+   font-size: 50px;
    font-weight: bold;
    letter-spacing: 10px;
    text-align: center;

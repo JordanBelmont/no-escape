@@ -32,35 +32,66 @@
 
    <h1 class="title">Rooms</h1>
 
+   <!-- Carousel -->
    <div class="carousel">
+
+      <!-- Room Image -->
       <div class="image-container">
          <img class="carousel-img" id="image" />
       </div>
-      <div class="room-wrapper">
-         <p class="room-title" id="title"></p>
-         <p class="room-story" id="story">
-         </p>
 
-         <div class="stats">
-            <p class="room-stat" id="stat">
-            </p>
-            <div class="room-stat-answer" id="rating">
+      <div class="room-wrapper">
+         <!-- Room Title & Story -->
+         <p class="room-title" id="title"></p>
+         <p class="room-story" id="storyone"></p>
+         <p class="room-story" id="storytwo"></p>
+
+         <!-- Room Stats -->
+         <div class="stat-wrapper">
+            <div class="stats">
+               <p class="room-stat">Difficulty</p>
+               <p class="room-stat">Fear Factor</p>
+               <p class="room-stat">Time</p>
+               <p class="room-stat">Players</p>
+            </div>
+            <div class="stats">
+               <div class="difficulty-container">
+                  <img class="room-stat skull" id="difficultyOne"></img>
+                  <img class="room-stat skull" id="difficultyTwo"></img>
+                  <img class="room-stat skull" id="difficultyThree"></img>
+                  <img class="room-stat skull" id="difficultyFour"></img>
+                  <img class="room-stat skull" id="difficultyFive"></img>
+               </div>
+               <div class="fear-container">
+                  <img class="room-stat skull" id="fearOne"></img>
+                  <img class="room-stat skull" id="fearTwo"></img>
+                  <img class="room-stat skull" id="fearThree"></img>
+                  <img class="room-stat skull" id="fearFour"></img>
+                  <img class="room-stat skull" id="fearFive"></img>
+               </div>
+               <p class="room-stat" id="time">Time</p>
+               <p class="room-stat" id="players">Players</p>
             </div>
          </div>
-         <button class="arrow-direction previous" id="previous">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-               stroke="currentColor" class="btn-icon-previous">
-               <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
-            </svg>
-         </button>
-         <button class="arrow-direction next" id="next">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-               stroke="currentColor" class="btn-icon-next">
-               <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
-            </svg>
+
+         <!-- Book Button -->
+         <a class="abattoir-link" data-text="Book" href="#">Book</a>
+
       </div>
+
+      <!-- Next & Previous Buttons -->
+      <button class="arrow-direction previous" id="previous">
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="btn-icon-previous">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+         </svg>
+      </button>
+      <button class="arrow-direction next" id="next">
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="btn-icon-next">
+            <path stroke-linecap="round" stroke-linejoin="round"
+               d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+         </svg>
    </div>
    </div>
    <hr>
