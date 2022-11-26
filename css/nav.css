@@ -1,14 +1,14 @@
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
 
-.abattoir-body {
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
-   padding: 30px 10%;
-}
+   .abattoir-body {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 30px 10%;
+   }
 
-.abattoir-logo-nav {
+   .abattoir-logo-nav {
       width: 35em;
    }
 
