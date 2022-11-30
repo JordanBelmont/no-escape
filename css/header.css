@@ -1,14 +1,14 @@
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
 
-   .abattoir-body {
+   header {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       padding: 30px 10%;
    }
 
-   .abattoir-logo-nav {
+   .header-logo {
       width: 35em;
    }
 
@@ -20,21 +20,21 @@
       text-align: center;
    }
 
-   .abattoir-ul li {
+   .abattoir-list {
       align-items: center;
-      padding-left: 50px;
+      padding-left: 100px;
    }
 
    .abattoir-link {
+      text-decoration: none;
+      align-items: center;
+      position: relative;
+      display: inline-block;
       font-family: Xtype-Bold;
       font-size: 25px;
       font-weight: bold;
       letter-spacing: 10px;
       color: #f0f8ff;
-      text-decoration: none;
-      align-items: center;
-      position: relative;
-      display: inline-block;
    }
 
    .abattoir-link:before {
@@ -50,7 +50,7 @@
 
    .abattoir-link:hover:before {
       left: -2px;
-      width: 100%;
+      width: 100%; 
    }
 
    @keyframes animate {
