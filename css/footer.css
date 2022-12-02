@@ -1,5 +1,6 @@
 footer {
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
    justify-content: center;
    margin: 40px 0;
@@ -68,3 +69,17 @@ footer {
    }
 }
 
+.social-container {
+   width: 100%;
+   text-align: center;
+   text-decoration: none;
+   margin-top: 20px;
+}
+
+.social-link {
+   text-decoration: none;
+}
+
+.social-icon{
+   margin: 0px 30px;
+}
