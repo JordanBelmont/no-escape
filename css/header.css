@@ -12,6 +12,11 @@
       width: 35em;
    }
 
+   .abattoir-nav {
+      display: flex;
+      
+   }
+
    .abattoir-ul {
       display: flex;
       flex-direction: row;
