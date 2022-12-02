@@ -17,6 +17,8 @@ let fearFive = document.getElementById('fearFive');
 let time = document.getElementById('time');
 let players = document.getElementById('players');
 
+let dots = document.getElementById('dots');
+
 // Global values
 let room_index = 0;
 
@@ -101,23 +103,38 @@ changeRoom = (room_index) => {
    players.textContent = rooms[room_index].players;
 }
 
+// ! NEED TO FIX SLIDERS
+
+// Slider Dots
+document.querySelectorAll('.dot').forEach(function (selector, room_index) {
+   selector.addEventListener('click', function () {
+      document.querySelector('.active').classList.remove('active');
+      selector.classList.add('active');
+      changeRoom(room_index);
+   })
+});
+
 // Next Room
-next.addEventListener("click", function nextRoom() {
+next.addEventListener('click', function nextRoom() {
    if (room_index < rooms.length - 1) {
       room_index += 1;
    } else {
       room_index = 0;
    }
+   document.querySelector('.active').classList.remove('active');
+   dots.children[room_index].classList.add('active');
    changeRoom(room_index);
 });
 
 // Previous Room
-previous.addEventListener("click", function prevRoom() {
+previous.addEventListener('click', function prevRoom() {
    if (room_index > 0) {
       room_index -= 1;
    } else {
-      room_index = rooms.length;
+      room_index = 2;
    }
+   document.querySelector('.active').classList.remove('active');
+   dots.children[room_index].classList.add('active');
    changeRoom(room_index);
 });
 
