@@ -1,15 +1,96 @@
+/* * IPHONE * */
+
 .gallery {
    width: 75%;
-   margin: 100px auto;
+   margin: 70px auto;
    padding: 50px;
-   box-shadow: 0px 0px 50px 10px #9C1010;
-   display: grid;
+   box-shadow: 0px 0px 50px 10px #A01110;
+   display: flex;
+   flex-direction: column;
    gap: 50px;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(3, 1fr);
 }
 
 .gallery-image {
-   width: 75%;
+   width: 100%;
    margin: 0 auto;
+}
+
+.five,
+.six,
+.seven,
+.eight,
+.nine {
+      display: none;
+   }
+
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+
+   .gallery {
+      width: 75%;
+      margin: 90px auto;
+      padding: 50px;
+      box-shadow: 0px 0px 50px 10px #A01110;
+      display: grid;
+      gap: 50px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+   }
+
+   .gallery {
+      margin: 80px auto;
+   }
+
+   .five,
+   .six {
+      display: block;
+   }
+
+   .gallery-image {
+      width: 90%;
+   }
+}
+
+/* * MACBOOK PRO * */
+@media only screen and (min-width: 1280px) {
+
+.gallery {
+      width: 75%;
+      margin: 90px auto;
+      padding: 50px;
+      box-shadow: 0px 0px 50px 10px #A01110;
+      display: grid;
+      gap: 50px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+   }
+
+   .seven,
+   .eight,
+   .nine {
+      display: block;
+   }
+
+   .gallery-image {
+      width: 80%;
+   }
+}
+
+/* * IMAC */
+@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+
+   .gallery {
+      width: 75%;
+      margin: 100px auto;
+      padding: 50px;
+      box-shadow: 0px 0px 50px 10px #A01110;
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+   }
+
+   .gallery-image {
+      width: 80%;
+   }
 }
