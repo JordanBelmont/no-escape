@@ -1,35 +1,30 @@
 /* * IPHONE * */
 
 .gallery {
-   width: 75%;
-   margin: 70px auto;
-   padding: 50px;
-   box-shadow: 0px 0px 50px 10px #A01110;
    display: flex;
    flex-direction: column;
-   gap: 50px;
-}
-
-.gallery-image {
    width: 100%;
-   margin: 0 auto;
 }
 
-.five,
-.six,
-.seven,
-.eight,
-.nine {
+.gallery-five,
+.gallery-six,
+.gallery-seven,
+.gallery-eight,
+.gallery-nine {
       display: none;
    }
+
+.gallery-image {
+   margin-bottom: 50px;
+}
 
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
 
    .gallery {
       width: 75%;
-      margin: 90px auto;
-      padding: 50px;
+      margin: 80px auto;
+      padding: 30px;
       box-shadow: 0px 0px 50px 10px #A01110;
       display: grid;
       gap: 50px;
@@ -37,42 +32,31 @@
       grid-template-rows: repeat(2, 1fr);
    }
 
-   .gallery {
-      margin: 80px auto;
-   }
-
-   .five,
-   .six {
-      display: block;
-   }
-
    .gallery-image {
-      width: 90%;
+      width: 100%;
+      margin: 0 auto;
+   }
+
+   .gallery-five,
+   .gallery-six {
+      display: block;
    }
 }
 
 /* * MACBOOK PRO * */
 @media only screen and (min-width: 1280px) {
 
-.gallery {
-      width: 75%;
+   .gallery {
       margin: 90px auto;
-      padding: 50px;
-      box-shadow: 0px 0px 50px 10px #A01110;
-      display: grid;
-      gap: 50px;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-   }
-
-   .seven,
-   .eight,
-   .nine {
-      display: block;
    }
 
    .gallery-image {
       width: 80%;
+   }
+
+   .gallery-seven,
+   .gallery-eight {
+      display: block;
    }
 }
 
@@ -80,17 +64,14 @@
 @media only screen and (min-width: 1537px) and (max-width: 2560px) {
 
    .gallery {
-      width: 75%;
       margin: 100px auto;
       padding: 50px;
-      box-shadow: 0px 0px 50px 10px #A01110;
-      display: grid;
       gap: 30px;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
    }
 
-   .gallery-image {
-      width: 80%;
+   .gallery-nine {
+      display: block;
    }
 }
