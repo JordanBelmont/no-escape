@@ -1,54 +1,24 @@
+/* * IPHONE * */
+
 .testimonial {
-   width: 75%;
-   margin: 100px auto;
-   padding: 32px;
-   font-size: 20px;
-   line-height: 1.6;
-   color: white;
-   background-color: rgb(0, 0, 0);
-   box-shadow: 0px 0px 50px 10px #9C1010;
-   position: relative;
    display: flex;
-   flex-wrap: wrap;
-   gap: 32px;
+   flex-direction: column;
+}
+
+.testimonial-four {
+   display: none;
 }
 
 .testimonial-text {
-   width: 400px;
-   border: 2px solid #9C1010;
-   margin: 50px auto;
+   border: 2px solid #A01110;
+   margin-bottom: 50px;
    padding: 22px;
    position: relative;
+   line-height: 1.6;
 }
 
-.testimonial-text::after,
-.testimonial-text::before,
-.testimonial-text-long::after,
-.testimonial-text-long::before {
-   content: '';
-   position: absolute;
-   font-family: fontAwesome;
-   font-size: 50px;
-   color: rgb(255, 255, 255);
-   background-color: rgb(0, 0, 0);
-}
-
-.testimonial-text::before,
-.testimonial-text-long::before {
-   content: url(/icons/quote-right.png);
-   bottom: 0;
-   right: 0;
-   transform: translate(50%, 50%);
-   box-shadow: -10px -10px 0 rgb(0, 0, 0);
-}
-
-.testimonial-text::after,
-.testimonial-text-long::after {
-   content: url(/icons/quote-left.png);
-   top: 0px;
-   left: 0px;
-   transform: translate(-50%, -30%);
-   box-shadow: 10px 0px 0 rgb(0, 0, 0);
+.testimonial-text-long {
+   display: none;
 }
 
 .testimonial-quote {
@@ -56,23 +26,129 @@
 }
 
 .testimonial-name {
-   padding-top: 1.2em;
+   padding-top: 15px;
    text-indent: 0;
    font-size: 15px;
-}
-
-.testimonial-text-long {
-   width: 90%;
-   border: 2px solid #9C1010;
-   margin: 25px auto;
-   padding: 20px;
-   position: relative;
 }
 
 .guestbook-wrapper {
    display: flex;
    text-align: center;
    justify-content: center;
-   /* align-items: center; */
    width: 100%;
+}
+
+
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+
+   .testimonial {
+      width: 75%;
+      margin: 80px auto;
+      padding: 30px;
+      box-shadow: 0px 0px 50px 10px #A01110;
+      font-size: 20px;
+      line-height: 1.6;
+      color: white;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 32px;
+   }
+   
+   .testimonial-three {
+      display: block;
+   }
+
+   .testimonial-text {
+      width: 75%;
+      margin: 30px auto;
+   }
+
+   .testimonial-text::after,
+   .testimonial-text::before,
+   .testimonial-text-long::after,
+   .testimonial-text-long::before {
+      content: '';
+      position: absolute;
+      font-family: fontAwesome;
+      font-size: 50px;
+      color: rgb(255, 255, 255);
+      background-color: rgb(0, 0, 0);
+}
+
+.testimonial-text::before,
+.testimonial-text-long::before {
+      content: url(/icons/quote-right.png);
+      bottom: 0;
+      right: 0;
+      transform: translate(50%, 50%);
+      box-shadow: -10px -10px 0 rgb(0, 0, 0);
+}
+
+.testimonial-text::after,
+.testimonial-text-long::after {
+      content: url(/icons/quote-left.png);
+      top: 0px;
+      left: 0px;
+      transform: translate(-50%, -30%);
+      box-shadow: 10px 0px 0 rgb(0, 0, 0);
+   }
+}
+
+/* * MACBOOK PRO * */
+@media only screen and (min-width: 1280px) {
+   
+   .testimonial {
+      margin: 90px auto;
+      display: flex;
+   }
+
+   .testimonial-three {
+      display: none;
+   }
+
+   .testimonial-four {
+      width: 100%;
+   }
+
+   .testimonial-text {
+   width: 400px;
+   border: 2px solid #A01110;
+   margin: 30px auto;
+   padding: 22px;
+   position: relative;
+   }
+
+   .testimonial-text-long {
+      display: block;
+      /* width: 400px; */
+      border: 2px solid #A01110;
+      margin: 30px auto;
+      padding: 22px;
+      position: relative;
+   }
+}
+
+/* * IMAC */
+@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+
+   .testimonial {
+      margin: 100px auto;
+   }
+
+   .testimonial-three {
+      display: block;
+   }
+
+   .testimonial-text {
+      margin: 50px auto;
+   }
+
+   .testimonial-text-long {
+      width: 90%;
+      margin: 25px auto;
+      padding: 20px;
+   }
 }
