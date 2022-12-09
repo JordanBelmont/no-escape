@@ -1,45 +1,70 @@
+/* * IPHONE * */
+
 .carousel {
-   width: 75%;
-   margin: 100px auto;
-   padding: 32px;
-   font-size: 22px;
+   width: 100%;
    line-height: 1.6;
-   color: white;
-   background-color: rgb(0, 0, 0);
-   box-shadow: 0px 0px 50px 10px #9C1010;
-   position: relative;
    display: flex;
-   gap: 32px;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   text-align: center;
 }
 
 .room-wrapper {
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: space-between;
 }
 
-.room-title {
-   font-size: 70px;
-   margin-bottom: 40px;
+.image-container {
+   width: 100%;
 }
 
-.room-story {
+.carousel-img {
+   width: 100%;
+}
+
+.room-name {
+   font-size: 50px;
+   margin-bottom: 20px;
+}
+
+table {
+   border-collapse: collapse;
+   margin: 50px 0 50px 0;
+}
+
+td {
+   border: 1px solid rgb(255, 255, 255);
    text-align: center;
+   vertical-align: middle;
+   height: 82px;
+   width: 300px;
+   font-size: 22px;
 }
 
-.stat-wrapper {
-   display: flex;
-   flex-direction: row;
-   gap: 275px;
+table tr:first-child td {
+   border-top: 0;
+}
+   
+table tr:last-child td {
+   border-bottom: 0;
 }
 
-.stats {
-   padding: 40px 0px;
-   display: flex;
-   flex-direction: column;
-   gap: 30px;
-   font-size: 25px;
+table tr td:first-child {
+   border-left: 0;
+}
+
+table tr td:last-child {
+   border-right: 0;
+}
+
+.book-button {
+   background-color: black;
+   font-size: 30px;
+   margin-bottom: 40px;
+   width: 50%;
+   border-color: white;;
 }
 
 .arrow-direction {
@@ -48,73 +73,185 @@
    border: none;
    height: 80px;
    width: 80px;
-   position: absolute;
    cursor: pointer;
    display: flex;
    align-items: center;
    justify-content: center;
 }
 
-.previous {
-   top: 0%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-}
-
-.next {
-   bottom: 0;
-   right: 50%;
-   transform: translate(50%, 50%);
-}
-
-@keyframes pulse-down {
-   to {
-      transform:translateY(10px);
-   }
-}
-
-@keyframes pulse-up {
-   to {
-      transform:translateY(-10px);
-   }
-}
-
-.btn-icon-previous:hover,
-.btn-icon-previous:focus,
-.btn-icon-previous:active {
-   animation: pulse-down 0.3s linear infinite alternate;
-}
-
-.btn-icon-next:hover,
-.btn-icon-next:focus,
-.btn-icon-next:active {
-   animation: pulse-down 0.3s linear infinite alternate;
-}
-
-.dots {
-   position: absolute;
-   left: 50%;
-   bottom: 0;
-   transform: translate(-50%, 450%);
+.more-container {
    display: flex;
-   gap: 30px;
+   justify-content: center;
+   align-items: center;
 }
 
-.dot {
-   height: 16px;
-   width: 16px;
-   background-color: rgb(0, 0, 0);
-   border: 2px solid #9C1010;
-   border-radius: 50%;
-   cursor: pointer;
-}
+.more-rooms {
+   margin: 0 30px 0 30px;
+   font-size: 20px;
+   }
 
 .active {
-   background-color: #9C1010;
+   background-color: #A01110;
 }
 
-.skull {
-   width: 25px;
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+   
+   .carousel {
+      width: 75%;
+      margin: 100px auto;
+      padding: 30px;
+      font-size: 22px;
+      line-height: 1.6;
+      color: white;
+      background-color: rgb(0, 0, 0);
+      box-shadow: 0px 0px 50px 10px #A01110;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      gap: 32px;
+   }
+
+   .room-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 20px;
+   }
+
+   .room-name {
+      font-size: 70px;
+      margin-bottom: 40px;
+   }
+
+   .room-story {
+      text-align: center;
+   }
+
+   @keyframes pulse-down {
+      to {
+         transform:translateY(10px);
+      }
+   }
+
+   @keyframes pulse-up {
+      to {
+         transform:translateY(-10px);
+      }
+   }
+
+   .btn-icon-previous:hover,
+   .btn-icon-previous:focus,
+   .btn-icon-previous:active {
+      animation: pulse-up 0.3s linear infinite alternate;
+   }
+
+   .btn-icon-next:hover,
+   .btn-icon-next:focus,
+   .btn-icon-next:active {
+      animation: pulse-down 0.3s linear infinite alternate;
+   }
+
+   .arrow-direction {
+      background: none;
+      color: rgb(255, 255, 255);
+      border: none;
+      height: 80px;
+      width: 80px;
+      position: absolute;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .previous {
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+
+   .next {
+      bottom: 0;
+      right: 50%;
+      transform: translate(50%, 50%);
+   }
+
+   .dots {
+      position: absolute;
+      left: 50%;
+      bottom: -20px;
+      transform: translate(-50%, 450%); 
+      display: flex;
+      gap: 30px;
+   } 
+
+   .dot {
+      height: 16px;
+      width: 16px;
+      background-color: rgb(0, 0, 0);
+      border: 2px solid #A01110;
+      border-radius: 50%;
+      cursor: pointer;
+   }
+
+   .book-button {
+      border: none;
+   }
+
+   .more-container {
+      display: none;
+   }
+
+   .active {
+      background-color: #A01110;
+   }
 }
 
+/* * MACBOOK PRO * */
+@media only screen and (min-width: 1280px) {
 
+   td {
+      border: 1px solid rgb(255, 255, 255);
+      text-align: center;
+      vertical-align: middle;
+      height: 50px;
+   }
+}
+
+/* * IMAC */
+@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+
+   .room-wrapper {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   .image-container {
+      width: 100%;
+   }
+
+   .carousel-img {
+      width: 90%;
+   }
+
+   .room-name {
+      font-size: 70px;
+      margin-bottom: 40px;
+   }
+
+   .room-story {
+      text-align: center;
+   }
+
+   td {
+      width: 600px
+   }
+}

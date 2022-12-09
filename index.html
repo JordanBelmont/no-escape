@@ -38,48 +38,80 @@
       </div>
    </div>
 
-   <h1 class="title">Rooms</h1>
-
+   <h1 class="heading">Rooms</h1>
    <!-- Carousel -->
    <div class="carousel">
       <!-- Room Image -->
-      <div class="image-container">
-         <img class="carousel-img" id="image" />
-      </div>
+
       <div class="room-wrapper">
-         <!-- Room Title & Story -->
-         <p class="room-title" id="title"></p>
+         <!-- Room Name & Story -->
+         <p class="room-name" id="name"></p>
+         <div class="image-container">
+            <img class="carousel-img" id="image" />
+         </div>
+         <p class="room-name" id="name"></p>
          <p class="room-story" id="storyone"></p>
+         <br>
          <p class="room-story" id="storytwo"></p>
          <!-- Room Stats -->
-         <div class="stat-wrapper">
+         <table>
+            <tr>
+               <td class="difficulty">Difficulty</td>
+               <td>
+                  <img class="difficulty-one" id="difficultyOne">
+                  <img class="difficulty-two" id="difficultyTwo">
+                  <img class="difficulty-three" id="difficultyThree">
+                  <img class="difficulty-four" id="difficultyFour">
+                  <img class="difficulty-five" id="difficultyFive">
+               </td>
+            </tr>
+            <tr>
+               <td class="fear">Fear</td>
+               <td>
+                  <img class="fear-one" id="fearOne">
+                  <img class="fear-two" id="fearTwo">
+                  <img class="fear-three" id="fearThree">
+                  <img class="fear-four" id="fearFour">
+                  <img class="fear-five" id="fearFive">
+               </td>
+            </tr>
+            <tr>
+               <td>Time</td>
+               <td class="time-stat" id="time"></td>
+            </tr>
+            <tr>
+               <td>Players</td>
+               <td class="players-stat" id="players"></td>
+            </tr>
+         </table>
+         <!-- <div class="stat-wrapper">
             <div class="stats">
-               <p class="room-stat">Difficulty</p>
-               <p class="room-stat">Fear Factor</p>
-               <p class="room-stat">Time</p>
-               <p class="room-stat">Players</p>
+               <p class="difficulty">Difficulty</p>
+               <p class="fear">Fear Factor</p>
+               <p class="time">Time</p>
+               <p class="players">Players</p>
             </div>
             <div class="stats">
                <div class="difficulty-container">
-                  <img class="room-stat skull" id="difficultyOne"></img>
-                  <img class="room-stat skull" id="difficultyTwo"></img>
-                  <img class="room-stat skull" id="difficultyThree"></img>
-                  <img class="room-stat skull" id="difficultyFour"></img>
-                  <img class="room-stat skull" id="difficultyFive"></img>
+                  <img class="difficulty-one" id="difficultyOne"></img>
+                  <img class="difficulty-two" id="difficultyTwo"></img>
+                  <img class="difficulty-three" id="difficultyThree"></img>
+                  <img class="difficulty-four" id="difficultyFour"></img>
+                  <img class="difficulty-five" id="difficultyFive"></img>
                </div>
                <div class="fear-container">
-                  <img class="room-stat skull" id="fearOne"></img>
-                  <img class="room-stat skull" id="fearTwo"></img>
-                  <img class="room-stat skull" id="fearThree"></img>
-                  <img class="room-stat skull" id="fearFour"></img>
-                  <img class="room-stat skull" id="fearFive"></img>
+                  <img class="fear-one" id="fearOne"></img>
+                  <img class="fear-two" id="fearTwo"></img>
+                  <img class="fear-three" id="fearThree"></img>
+                  <img class="fear-four" id="fearFour"></img>
+                  <img class="fear-five" id="fearFive"></img>
                </div>
-               <p class="room-stat" id="time">Time</p>
-               <p class="room-stat" id="players">Players</p>
+               <p class="time-stat" id="time">Time</p>
+               <p class="players-stat" id="players">Players</p>
             </div>
-         </div>
+         </div> -->
          <!-- Book Button -->
-         <a class="abattoir-link" data-text="Book" href="#">Book</a>
+         <button class="abattoir-link book-button" data-text="Book" href="#">Book</button>
       </div>
 
       <!-- Previous Button -->
@@ -89,6 +121,12 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
          </svg>
       </button>
+
+      <!-- Next Room -->
+      <div class="more-container">
+         <p class="more-rooms">More Rooms</p>
+      </div>
+
       <!-- Next Button -->
       <button class="arrow-direction next" id="next">
          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -105,18 +143,18 @@
       </ul>
    </div>
 
-   <h1 class="title">Gallery</h1>
+   <h1 class="heading">Gallery</h1>
    <!-- Gallery -->
    <div class="gallery">
-      <img class="gallery-image one" src="/images/gallery-one.png">
-      <img class="gallery-image two" src="/images/gallery-two.png">
-      <img class="gallery-image three" src="/images/gallery-three.png">
-      <img class="gallery-image four" src="/images/gallery-four.png">
-      <img class="gallery-image five" src="/images/gallery-five.png">
-      <img class="gallery-image six" src="/images/gallery-six.png">
-      <img class="gallery-image seven" src="/images/gallery-seven.png">
-      <img class="gallery-image eight" src="/images/gallery-eight.png">
-      <img class="gallery-image nine" src="/images/gallery-nine.png">
+      <img class="gallery-image gallery-one" src="/images/gallery-one.png">
+      <img class="gallery-image gallery-two" src="/images/gallery-two.png">
+      <img class="gallery-image gallery-three" src="/images/gallery-three.png">
+      <img class="gallery-image gallery-four" src="/images/gallery-four.png">
+      <img class="gallery-image gallery-five" src="/images/gallery-five.png">
+      <img class="gallery-image gallery-six" src="/images/gallery-six.png">
+      <img class="gallery-image gallery-seven" src="/images/gallery-seven.png">
+      <img class="gallery-image gallery-eight" src="/images/gallery-eight.png">
+      <img class="gallery-image gallery-nine" src="/images/gallery-nine.png">
    </div>
 
    <h1 class="heading">Testimonials</h1>
