@@ -1,23 +1,68 @@
+/* * IPHONE * */
+
 body {
    background-color: black;
    color: #f0f8ff;
    font-family: Xtype-Regular;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 20px;
 }
 
-.abattoir-body {
-   background-color: black;
-}
-
-.title {
+.heading {
    font-family: Xtype-Bold;
-   font-size: 50px;
+   font-size: 40px;
    font-weight: bold;
-   letter-spacing: 10px;
+   letter-spacing: 5px;
    text-align: center;
-   margin-top: 200px;
+   margin: 150px 0 50px 0;
 }
 
 hr {
-   margin: 160px 0 30px 0;
+   margin: 50px 0 30px 0;
+   width: 100%;
    border: 1px solid #A01110;
+}
+
+body h1:first-of-type {
+   margin-top: 250px;
+}
+
+/* * IPAD * */
+@media only screen and (min-width: 768px) {
+
+   .heading {
+      margin: 50px 0 30px 0;
+      font-size: 50px;
+   }
+
+   body h1:first-of-type {
+      margin-top: 200px;
+}
+
+   hr {
+      margin: 100px 0 30px 0;
+   }
+}
+
+/* * MACBOOK PRO * */
+@media only screen and (min-width: 1280px) {
+
+   body h1:first-of-type {
+      margin-top: 300px;
+   }
+}
+
+/* * IMAC */
+@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+   
+   .heading {
+      margin-top: 210px;
+   }
+
+   body h1:first-of-type {
+      margin-top: 400px;
+   }
 }
