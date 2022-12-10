@@ -18,15 +18,20 @@
    <header>
       <!-- Header Logo -->
       <img class="header-logo" src="icons/abattoir.png" alt="abattoir inc. logo">
-      <button class="burger-button" id='burgerButton'>
-         <svg viewBox="0 0 100 80" width="40" height="40">
-            <path class="line line1"
-               d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-            <path class="line line2" d="M 20,50 H 80" />
-            <path class="line line3"
-               d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-         </svg>
-      </button>
+
+      <!-- Burger -->
+      <div class="burger-container">
+         <input type="checkbox" id="burgerButton" class="checkbox visually-hidden">
+         <label for="burgerButton">
+            <div class="burger">
+               <span class="bar bar1"></span>
+               <span class="bar bar2"></span>
+               <span class="bar bar3"></span>
+               <span class="bar bar4"></span>
+            </div>
+         </label>
+      </div>
+
       <!-- Nav -->
       <nav class="abattoir-nav" id="navBurger">
          <ul class="abattoir-ul">
@@ -58,7 +63,7 @@
          <div class="image-container">
             <img class="carousel-img" id="image" />
          </div>
-         <p class="room-name" id="name"></p>
+         <br>
          <p class="room-story" id="storyone"></p>
          <br>
          <p class="room-story" id="storytwo"></p>
@@ -93,32 +98,6 @@
                <td class="players-stat" id="players"></td>
             </tr>
          </table>
-         <!-- <div class="stat-wrapper">
-            <div class="stats">
-               <p class="difficulty">Difficulty</p>
-               <p class="fear">Fear Factor</p>
-               <p class="time">Time</p>
-               <p class="players">Players</p>
-            </div>
-            <div class="stats">
-               <div class="difficulty-container">
-                  <img class="difficulty-one" id="difficultyOne"></img>
-                  <img class="difficulty-two" id="difficultyTwo"></img>
-                  <img class="difficulty-three" id="difficultyThree"></img>
-                  <img class="difficulty-four" id="difficultyFour"></img>
-                  <img class="difficulty-five" id="difficultyFive"></img>
-               </div>
-               <div class="fear-container">
-                  <img class="fear-one" id="fearOne"></img>
-                  <img class="fear-two" id="fearTwo"></img>
-                  <img class="fear-three" id="fearThree"></img>
-                  <img class="fear-four" id="fearFour"></img>
-                  <img class="fear-five" id="fearFive"></img>
-               </div>
-               <p class="time-stat" id="time">Time</p>
-               <p class="players-stat" id="players">Players</p>
-            </div>
-         </div> -->
          <!-- Book Button -->
          <button class="abattoir-link book-button" data-text="Book" href="#">Book</button>
       </div>
