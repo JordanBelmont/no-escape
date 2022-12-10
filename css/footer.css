@@ -88,6 +88,7 @@ footer {
 
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
+
    footer {
       display: flex;
       gap: 0 50px;
