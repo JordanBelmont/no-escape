@@ -75,7 +75,7 @@ footer {
 .social-container {
    display: flex;
    text-decoration: none;
-   margin-top: 20px;
+   margin: 20px 0 30px 0;
 }
 
 .social-link {
@@ -84,6 +84,17 @@ footer {
 
 .social-icon{
    margin: 0px 30px;
+}
+
+.icons8 {
+   text-align: center;
+   color: white;
+   margin-top: 20px;
+   }
+
+.icon8 {
+   text-decoration: none;
+   color: #A01110;
 }
 
 /* * IPAD * */
@@ -105,8 +116,6 @@ footer {
       display: inline;
       width: 100%;
       text-align: center;
-      text-decoration: none;
-      margin-top: 20px;
    }
 }
 

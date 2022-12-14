@@ -80,7 +80,7 @@
 
    .testimonial-text::before,
    .testimonial-text-long::before {
-      content: url(/icons/quote-right.png);
+      content: url(/abattoir-inc/icons/quote-right.png);
       bottom: 0;
       right: 0;
       transform: translate(50%, 50%);
@@ -89,7 +89,7 @@
 
    .testimonial-text::after,
    .testimonial-text-long::after {
-      content: url(/icons/quote-left.png);
+      content: url(/abattoir-inc/icons/quote-left.png);
       top: 0px;
       left: 0px;
       transform: translate(-50%, -30%);
