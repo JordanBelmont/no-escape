@@ -2,6 +2,7 @@
 
 .carousel {
    width: 100%;
+   height: 100%;
    color: white;
    line-height: 1.6;
    display: flex;
@@ -9,6 +10,11 @@
    flex-wrap: wrap;
    justify-content: center;
    text-align: center;
+}
+
+.btn-icon-next,
+.btn-icon-previous {
+   width: 100%;
 }
 
 .room-wrapper {
@@ -72,8 +78,8 @@ table tr td:last-child {
    background: none;
    color: rgb(255, 255, 255);
    border: none;
-   height: 80px;
-   width: 80px;
+   height: 70px;
+   width: 70px;
    cursor: pointer;
    display: flex;
    align-items: center;
@@ -162,6 +168,8 @@ table tr td:last-child {
 
    .arrow-direction {
       position: absolute;
+      width: 80px;
+      height: 80px;
    }
 
    .previous {
