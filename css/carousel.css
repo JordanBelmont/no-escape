@@ -71,7 +71,8 @@ table tr td:last-child {
    font-size: 30px;
    margin-bottom: 40px;
    width: 50%;
-   border-color: white;;
+   cursor: pointer;
+   border-color: white;
 }
 
 .arrow-direction {
