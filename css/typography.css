@@ -1,5 +1,5 @@
 @font-face {
-   font-family: "XTypewriter-Regular"; 
+   font-family: "XTypewriter-Regular";
    font-weight: normal;
    src: url(../fonts/XTypewriter-Regular.ttf) format("truetype");
 }
@@ -10,3 +10,8 @@
    src: url(../fonts/XTypewriter-Bold.ttf) format("truetype");
 }
 
+@font-face {
+   font-family: "KingsButcher";
+   font-weight: normal;
+   src: url(../fonts/KingsButcher.ttf) format("truetype");
+}

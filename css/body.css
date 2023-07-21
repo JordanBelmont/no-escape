@@ -26,9 +26,10 @@ hr {
    border: 1px solid #A01110;
 }
 
+/* 
 body h1:first-of-type {
    margin-top: 250px;
-}
+} */
 
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
@@ -38,9 +39,10 @@ body h1:first-of-type {
       font-size: 50px;
    }
 
+   /* 
    body h1:first-of-type {
       margin-top: 200px;
-}
+   } */
 
    hr {
       margin: 100px 0 30px 0;
@@ -50,19 +52,19 @@ body h1:first-of-type {
 /* * MACBOOK PRO * */
 @media only screen and (min-width: 1280px) {
 
-   body h1:first-of-type {
+   /* body h1:first-of-type {
       margin-top: 300px;
-   }
+   } */
 }
 
 /* * IMAC */
 @media only screen and (min-width: 1537px) and (max-width: 2560px) {
-   
+
    .heading {
       margin-top: 210px;
    }
 
-   body h1:first-of-type {
+   /* body h1:first-of-type {
       margin-top: 400px;
-   }
+   } */
 }

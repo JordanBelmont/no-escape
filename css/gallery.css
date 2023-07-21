@@ -11,8 +11,8 @@
 .gallery-seven,
 .gallery-eight,
 .gallery-nine {
-      display: none;
-   }
+   display: none;
+}
 
 .gallery-image {
    margin-bottom: 50px;
@@ -35,6 +35,12 @@
    .gallery-image {
       width: 100%;
       margin: 0 auto;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+   }
+
+   .gallery-image:hover {
+      filter: brightness(50%);
    }
 
    .gallery-five,
