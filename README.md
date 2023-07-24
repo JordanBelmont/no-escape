@@ -1,18 +1,18 @@
 <p align="center">
-   <h1 class="title"><span class="title-no">No</span> Escape</h1>
+   <img src="images/no-escape-logo.png">
 </p>
 <h3 align="center"> 
-   The Static Escape Room Webpage
+   Escape Room Static Webpage
 </h3>
 
 # Description
-Abattoir Inc. is part of a series of static webpages I created wherein I showcase a web **_feature_** and wrap it in a **_theme_** I like.
+*No Escape* is part of a series of static webpages I created wherein I showcase a web **_feature_** and wrap it in a **_theme_** I like.
 
 ## Feature
-The main feature of Abattoir Inc. is a fully-responsive carousel.
+The main feature of *No Escape* is a fully-responsive carousel.
 
 ## Theme
-The chosen theme of Abattoir Inc. is a fictional horror-based Escape Room company.
+The chosen theme of *No Escape* is a fictional horror-based escape room company.
 
 # Requirements
 No special requirements.
@@ -37,7 +37,7 @@ No special requirements.
 - The SVG arrows would render when using inspect for all media query sizes, but when testing it live on a phone they wouldn't display until I set the SVG to have a specific size.
 
 ## Bugs
-- The carousel can change from one slide to the next using both the directional arrows and dot indicators. However, when clicking the dots and arrows alternatingly the carousel resets to the first slide no matter where you click. https://github.com/JordanBelmont/abattoir-inc/blob/527f0f7739abecd89cdcfc89f8b53ee31ba06325/javascript/script.js#L108-L141
+- The carousel can change from one slide to the next using both the directional arrows and dot indicators. However, when clicking the dots and arrows alternatingly the carousel resets to the first slide no matter where you click. https://github.com/JordanBelmont/no-escape/blob/527f0f7739abecd89cdcfc89f8b53ee31ba06325/javascript/script.js#L108-L141
 
 - The carousel can't be changed using swipes.
 
