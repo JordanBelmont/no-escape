@@ -1,6 +1,6 @@
 /* * IPHONE * */
 
-.hero-image {
+.hero {
    background-image: url(/abattoir-inc/images/abattoir-hero.png);
    background-repeat: no-repeat;
    background-size: contain;
@@ -32,28 +32,28 @@
 /* * IPAD * */
 @media only screen and (min-width: 768px) {
 
-   .hero-image {
-   padding: 280px;
+   .hero {
+      padding: 280px;
    }
 
    .hero-text {
-   top: 90%;
-   left: 50%;
+      top: 90%;
+      left: 50%;
    }
 
    .hero-title {
-   font-size: 65px;
+      font-size: 65px;
    }
 
    .hero-subtitle {
-   font-size: 28px;
+      font-size: 28px;
    }
 }
 
 /* * MACBOOK PRO * */
 @media only screen and (min-width: 1280px) {
 
-   .hero-image {
+   .hero {
       padding: 380px;
    }
 
@@ -74,7 +74,7 @@
 /* * IMAC */
 @media only screen and (min-width: 1537px) and (max-width: 2560px) {
 
-   .hero-image {
+   .hero {
       padding: 480px;
    }
 

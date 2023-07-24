@@ -7,12 +7,12 @@ footer {
    padding: 30px 30px;
 }
 
-.foot-container {
+.footer-container {
    margin-bottom: 30px;
    text-align: center;
 }
 
-.foot-ul {
+.footer-ul {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -22,18 +22,20 @@ footer {
    margin: 20px 0 30px 0;
 }
 
-.abattoir-logo-foot {
-   width: 20em;
+h3 {
+   font-size: 6em;
+   font-family: 'KingsButcher';
+   word-spacing: -10px;
 }
 
-.foot-text {
+.footer-text {
    font-family: Xtypewriter-Regular;
    font-size: 15px;
    font-weight: bold;
    text-align: center;
 }
 
-.foot-link {
+.footer-link {
    font-family: Xtypewriter-Bold;
    font-size: 20px;
    font-weight: bold;
@@ -45,7 +47,7 @@ footer {
    display: inline-block;
 }
 
-.foot-link:before {
+.footer-link:before {
    content: '';
    position: absolute;
    width: 0;
@@ -54,9 +56,9 @@ footer {
    right: 0;
    background: #A01110;
    transition: 0.2s ease;
-} 
+}
 
-.foot-link:hover:before {
+.footer-link:hover:before {
    left: -2px;
    width: 100%;
 }
@@ -66,23 +68,24 @@ footer {
       opacity: 0;
       transform: translateY(-10px);
    }
+
    100% {
-         opacity: 1;
-         transform: translateY(0);
+      opacity: 1;
+      transform: translateY(0);
    }
 }
 
-.social-container {
+.footer-social-container {
    display: flex;
    text-decoration: none;
    margin: 20px 0 30px 0;
 }
 
-.social-link {
+.footer-social-link {
    text-decoration: none;
 }
 
-.social-icon{
+.footer-social-icon {
    margin: 0px 30px;
 }
 
@@ -90,7 +93,7 @@ footer {
    text-align: center;
    color: white;
    margin-top: 20px;
-   }
+}
 
 .icon8 {
    text-decoration: none;
@@ -105,14 +108,14 @@ footer {
       gap: 0 50px;
    }
 
-   .foot-ul {
+   .footer-ul {
       display: flex;
       flex-direction: row;
       gap: 0 50px;
       margin-bottom: 30px;
    }
 
-   .social-container {
+   .footer-social-container {
       display: inline;
       width: 100%;
       text-align: center;

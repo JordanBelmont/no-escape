@@ -9,7 +9,7 @@
    display: none;
 }
 
-.testimonial-text {
+.testimonial-container {
    border: 2px solid #A01110;
    margin-bottom: 50px;
    padding: 22px;
@@ -17,7 +17,7 @@
    line-height: 1.6;
 }
 
-.testimonial-text-long {
+.testimonial-container-long {
    display: none;
 }
 
@@ -31,7 +31,7 @@
    font-size: 15px;
 }
 
-.guestbook-wrapper {
+.guestbook-container {
    display: flex;
    text-align: center;
    justify-content: center;
@@ -61,15 +61,15 @@
       display: block;
    }
 
-   .testimonial-text {
+   .testimonial-container {
       width: 75%;
       margin: 30px auto;
    }
 
-   .testimonial-text::after,
-   .testimonial-text::before,
-   .testimonial-text-long::after,
-   .testimonial-text-long::before {
+   .testimonial-container::after,
+   .testimonial-container::before,
+   .testimonial-container-long::after,
+   .testimonial-container-long::before {
       content: '';
       position: absolute;
       font-family: fontAwesome;
@@ -78,8 +78,8 @@
       background-color: rgb(0, 0, 0);
    }
 
-   .testimonial-text::before,
-   .testimonial-text-long::before {
+   .testimonial-container::before,
+   .testimonial-container-long::before {
       content: url(/abattoir-inc/icons/quote-right.png);
       bottom: 0;
       right: 0;
@@ -87,8 +87,8 @@
       box-shadow: -10px -10px 0 rgb(0, 0, 0);
    }
 
-   .testimonial-text::after,
-   .testimonial-text-long::after {
+   .testimonial-container::after,
+   .testimonial-container-long::after {
       content: url(/abattoir-inc/icons/quote-left.png);
       top: 0px;
       left: 0px;
@@ -113,7 +113,7 @@
       width: 100%;
    }
 
-   .testimonial-text {
+   .testimonial-container {
       width: 400px;
       border: 2px solid #A01110;
       margin: 30px auto;
@@ -121,7 +121,7 @@
       position: relative;
    }
 
-   .testimonial-text-long {
+   .testimonial-container-long {
       display: block;
       border: 2px solid #A01110;
       margin: 30px auto;
@@ -141,11 +141,11 @@
       display: block;
    }
 
-   .testimonial-text {
+   .testimonial-container {
       margin: 50px auto;
    }
 
-   .testimonial-text-long {
+   .testimonial-container-long {
       width: 90%;
       margin: 25px auto;
       padding: 20px;
