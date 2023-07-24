@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="icons/abattoir.png" alt="Material Bread logo">
+   <h1 class="title"><span class="title-no">No</span> Escape</h1>
 </p>
 <h3 align="center"> 
    The Static Escape Room Webpage
