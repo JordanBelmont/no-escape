@@ -57,85 +57,84 @@
       </div>
    </div>
 
+
+
    <h1 class="heading">Rooms</h1>
    <!-- Carousel -->
-   <div class="carousel">
+   <div class="carousel" id="carousel">
       <!-- Room Image -->
+      <img class="room-img" id="image" />
 
       <div class="room-container">
-         <!-- Room Name, Image & Story -->
-         <p class="room-name" id="name"></p>
-         <div class="room-img-container">
-            <img class="room-img" id="image" />
+         <div class="arrow-container">
+            <!-- Previous Button -->
+            <button class="arrows previous" id="previous">
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="btn-previous">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                     d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
+               </svg>
+            </button>
+
+            <!-- Room Name -->
+            <p class="room-title" id="title"></p>
+
+            <!-- Next Button -->
+            <button class="arrows next" id="next">
+               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="btn-next">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                     d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+               </svg>
+            </button>
          </div>
          <br>
-         <p class="room-story" id="storyone"></p>
+         <p class="story" id="storyone"></p>
          <br>
-         <p class="room-story" id="storytwo"></p>
-         <!-- Room Stats -->
+         <p class="story" id="storytwo"></p>
          <table>
             <tr>
-               <td class="room-difficulty">Difficulty</td>
+               <td class="table-difficulty">Difficulty</td>
                <td>
-                  <img class="difficulty-one" id="difficultyOne">
-                  <img class="difficulty-two" id="difficultyTwo">
-                  <img class="difficulty-three" id="difficultyThree">
-                  <img class="difficulty-four" id="difficultyFour">
-                  <img class="difficulty-five" id="difficultyFive">
+                  <img class="difficulty difficulty-one" id="difficultyOne">
+                  <img class="difficulty difficulty-two" id="difficultyTwo">
+                  <img class="difficulty difficulty-three" id="difficultyThree">
+                  <img class="difficulty difficulty-four" id="difficultyFour">
+                  <img class="difficulty difficulty-five" id="difficultyFive">
                </td>
             </tr>
             <tr>
-               <td class="room-fear">Fear</td>
+               <td class="table-fear">Fear</td>
                <td>
-                  <img class="fear-one" id="fearOne">
-                  <img class="fear-two" id="fearTwo">
-                  <img class="fear-three" id="fearThree">
-                  <img class="fear-four" id="fearFour">
-                  <img class="fear-five" id="fearFive">
+                  <img class=" fear fear-one" id="fearOne">
+                  <img class="fear fear-two" id="fearTwo">
+                  <img class="fear fear-three" id="fearThree">
+                  <img class="fear fear-four" id="fearFour">
+                  <img class="fear fear-five" id="fearFive">
                </td>
             </tr>
             <tr>
                <td>Time</td>
-               <td class="room-time" id="time"></td>
+               <td class="table-time" id="time"></td>
             </tr>
             <tr>
                <td>Players</td>
-               <td class="room-players" id="players"></td>
+               <td class="table-players" id="players"></td>
             </tr>
          </table>
-         <!-- Book Button -->
-         <button class="carousel-button" data-text="Book" href="">Book</button>
+
+         <div class="guestbook-container">
+            <a class="nav-link" data-text="Sign Guestbook" href="#" onclick="return false">Sign Guestbook</a>
+         </div>
       </div>
-
-      <!-- Previous Button -->
-      <button class="carousel-arrow previous" id="previous">
-         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="btn-previous">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5" />
-         </svg>
-      </button>
-
-      <!-- Next Room -->
-      <div class="more-rooms-container">
-         <p class="more-rooms">More Rooms</p>
-      </div>
-
-      <!-- Next Button -->
-      <button class="carousel-arrow next" id="next">
-         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="btn-next">
-            <path stroke-linecap="round" stroke-linejoin="round"
-               d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
-         </svg>
-      </button>
 
       <!-- Dots -->
-      <ul class="carousel-dots" id="dots">
-         <li class="dot active"></li>
-         <li class="dot"></li>
-         <li class="dot"></li>
-      </ul>
    </div>
+   <ul class="carousel-dots" id="dots">
+      <li class="dot active"></li>
+      <li class="dot"></li>
+      <li class="dot"></li>
+   </ul>
 
    <h1 class="heading">Gallery</h1>
    <!-- Gallery -->

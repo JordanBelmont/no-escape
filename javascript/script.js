@@ -1,8 +1,6 @@
-let previous = document.getElementById('previous');
-let next = document.getElementById('next');
-
+let carousel = document.getElementById('carousel');
 let image = document.getElementById('image');
-let name = document.getElementById('name');
+let title = document.getElementById('title');
 let story = document.getElementById('story');
 let difficultyOne = document.getElementById('difficultyOne');
 let difficultyTwo = document.getElementById('difficultyTwo');
@@ -17,18 +15,21 @@ let fearFive = document.getElementById('fearFive');
 let time = document.getElementById('time');
 let players = document.getElementById('players');
 
+let previous = document.getElementById('previous');
+let next = document.getElementById('next');
+
 let dots = document.getElementById('dots');
 
-// Global values
+// GLOBAL VALUES
 let room_index = 0;
 
-// Rooms
+// ROOMS
 let rooms = [
    {
       img: "images/Toy-Box.png",
-      name: "Toy Box",
+      title: "Toy Box",
       storyone: "For weeks, reports of the serial killer known as 'The Toyman' have flooded news outlets, the last thing you ever expected was to wind up as one of his victims.",
-      storytwo: "Trapped in a hand-crafted maze of building blocks, ball pits and ragged toys, you must escape from this nightmare, before playtime is over forever.",
+      storytwo: "Lost in a hand-crafted maze of building blocks, ball pits and ragged toys, you must escape from this nightmare, before playtime is over forever.",
       difficultyone: "icons/redskull.png",
       difficultytwo: "icons/redskull.png",
       difficultythree: "icons/redskull.png",
@@ -44,9 +45,9 @@ let rooms = [
    },
    {
       img: "images/Doom-Town.png",
-      name: "Doom Town",
-      storyone: "As part of the atomic testing site research crew, it was your task to simply document finding, but you just couldn't shake the feeling you were being watched.",
-      storytwo: "Trapped in an atomic-blistered ruin, you'll need to conquer your fears in order to escape your ordeal before you become a permanent resident of Doom Town.",
+      title: "Doom Town",
+      storyone: "As part of the atomic testing site research crew, it was your task to simply document any findings, but you just couldn't shake the feeling you were being watched.",
+      storytwo: "Trapped in an atomic-blistered ruin, you'll need to conquer your fears in order to escape, before you become a permanent resident of Doom Town.",
       difficultyone: "icons/redskull.png",
       difficultytwo: "icons/redskull.png",
       difficultythree: "icons/redskull.png",
@@ -62,9 +63,9 @@ let rooms = [
    },
    {
       img: "images/Moloch-Trials.png",
-      name: "The Moloch Trials",
+      title: "Moloch Trials",
       storyone: "Rumours have been spreading about the increase in missing children coinciding with the emergence of a secret society known only as 'The Embers of Tophet'.",
-      storytwo: "As a local journalist, you've been invited to shed light on the order to quell some of the allegations. But you're about to learn why this order has such an exclusive membership.",
+      storytwo: "As a local journalist, you've been invited to shed light on the order to quell some of the allegations. But you're about to learn why this order is so exclusive.",
       difficultyone: "icons/redskull.png",
       difficultytwo: "icons/redskull.png",
       difficultythree: "icons/redskull.png",
@@ -80,13 +81,13 @@ let rooms = [
    }
 ]
 
-// * FUNCTIONS
+// FUNCTIONS
 
 changeRoom = (room_index) => {
 
-   // Change room
+   // CHANGE ROOM
    image.src = rooms[room_index].img;
-   name.textContent = rooms[room_index].name;
+   title.textContent = rooms[room_index].title;
    storyone.textContent = rooms[room_index].storyone;
    storytwo.textContent = rooms[room_index].storytwo;
    difficultyOne.src = rooms[room_index].difficultyone;
@@ -105,8 +106,8 @@ changeRoom = (room_index) => {
 
 // ! NEED TO FIX SLIDERS !
 
-// Slider Dots
-document.querySelectorAll('.dot').forEach(function (selector, room_index) {
+// SLIDER DOTS
+document.querySelectorAll('.dot').forEach((selector, room_index) => {
    selector.addEventListener('click', function () {
       document.querySelector('.active').classList.remove('active');
       selector.classList.add('active');
@@ -114,7 +115,7 @@ document.querySelectorAll('.dot').forEach(function (selector, room_index) {
    })
 });
 
-// Next Room
+// NEXT ROOM
 next.addEventListener('click', function nextRoom() {
    if (room_index < rooms.length - 1) {
       room_index += 1;
@@ -126,7 +127,7 @@ next.addEventListener('click', function nextRoom() {
    changeRoom(room_index);
 });
 
-// Previous Room
+// PREVIOUS ROOM
 previous.addEventListener('click', function prevRoom() {
    if (room_index > 0) {
       room_index -= 1;
@@ -140,6 +141,7 @@ previous.addEventListener('click', function prevRoom() {
 
 changeRoom(room_index);
 
+// BURGER
 let nav = document.getElementById('navBurger');
 let burger = document.getElementById('burgerButton');
 

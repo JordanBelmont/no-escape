@@ -1,53 +1,79 @@
-/* * IPHONE * */
+/* * PHONES * */
 
 .carousel {
-   width: 100%;
-   height: 100%;
-   color: white;
-   line-height: 1.6;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
-   text-align: center;
+   margin: 1rem auto 1rem auto;
+   font-size: 1.2rem;
+   line-height: 1.5rem;
 }
 
-.btn-next,
-.btn-previous {
+.room-img {
    width: 100%;
+   display: block;
+   margin: 0 auto 0 auto;
+   pointer-events: none;
 }
 
 .room-container {
    display: flex;
    flex-direction: column;
+   text-align: center;
+   margin: 1rem auto 0 auto;
+}
+
+/* ARROWS */
+
+.arrow-container {
+   display: flex;
+   flex-direction: row;
    align-items: center;
+   justify-content: space-between;
 }
 
-.room-img-container {
-   width: 100%;
+.arrows {
+   background: none;
+   color: rgb(255, 255, 255);
+   border: none;
+   height: 4.5rem;
+   width: 4.5rem;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
-.room-img {
-   width: 100%;
+.previous {
+   bottom: 65%;
+   left: 0%;
+   transform: rotate(-90deg);
 }
 
-.room-name {
-   font-size: 50px;
-   margin-bottom: 20px;
+.next {
+   bottom: 65%;
+   right: -0%;
+   transform: rotate(-90deg);
 }
+
+/* TITLE */
+
+.room-title {
+   font-size: 2em;
+   line-height: 2.5rem
+}
+
+/* TABLE */
 
 table {
    border-collapse: collapse;
-   margin: 50px 0 50px 0;
+   margin: 2.5rem 0 2.5rem 0;
 }
 
 td {
    border: 1px solid rgb(255, 255, 255);
    text-align: center;
    vertical-align: middle;
-   height: 82px;
-   width: 300px;
-   font-size: 22px;
+   height: 3rem;
+   width: 18rem;
+   font-size: 1em;
 }
 
 table tr:first-child td {
@@ -66,93 +92,145 @@ table tr td:last-child {
    border-right: 0;
 }
 
-.carousel-button {
-   background-color: black;
-   font-size: 30px;
-   margin-bottom: 40px;
-   width: 50%;
-   cursor: pointer;
-   border-color: white;
+.fear,
+.difficulty {
+   width: 1rem;
 }
 
-.carousel-arrow {
-   background: none;
-   color: rgb(255, 255, 255);
+/* BUTTON */
+
+.book-btn {
+   background-color: transparent;
+   font-size: 1.5em;
+   font-family: Xtypewriter-Bold;
+   letter-spacing: 10px;
+   font-weight: bold;
+   margin: 1rem 0 1rem 0;
+   cursor: pointer;
    border: none;
-   height: 70px;
-   width: 70px;
-   cursor: pointer;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   color: white;
+   white-space: nowrap;
 }
 
-.more-container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-.more-rooms {
-   margin: 0 30px 0 30px;
-   font-size: 20px;
-}
+/* DOTS */
 
 .carousel-dots {
    display: flex;
    justify-content: center;
-   margin-top: 30px;
-   gap: 30px;
+   gap: 2rem;
    width: 100%;
 }
 
 .dot {
-   height: 16px;
-   width: 16px;
+   height: 1rem;
+   width: 1rem;
    background-color: rgb(0, 0, 0);
-   border: 2px solid #A01110;
+   border: .2rem solid #A01110;
    border-radius: 50%;
    cursor: pointer;
+   list-style: none;
 }
 
 .active {
    background-color: #A01110;
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
+/* * TABLETS * */
+@media only screen and (min-width: 481px) {
 
    .carousel {
-      width: 75%;
-      margin: 100px auto;
-      padding: 30px;
-      font-size: 22px;
-      box-shadow: 0px 0px 50px 10px #A01110;
-      position: relative;
-      gap: 32px;
+      margin: 0 auto 2rem auto;
+      width: 100%;
    }
 
    .room-container {
-      display: flex;
+      width: 90%;
+   }
+
+   /* ARROWS */
+
+   .arrows {
+      width: 5rem;
+   }
+
+   .room-title {
+      font-size: 2.5rem;
+   }
+
+   /* TABLE */
+
+   table {
+      margin: 1.5rem 0 1.5rem 0;
+   }
+
+   .fear,
+   .difficulty {
+      width: 1.8rem;
+   }
+}
+
+/* * LAPTOPS * */
+@media only screen and (min-width: 769px) {
+
+   .carousel {
+      width: 90%;
+      position: relative;
+      box-shadow: 0 0 2rem .7rem #A01110;
+   }
+
+   .carousel:hover .room-img {
+      filter: brightness(15%);
+      transition: .3s ease-in-out;
+   }
+
+   .carousel:hover .room-title,
+   .carousel:hover .story,
+   .carousel:hover table,
+   .carousel:hover .book-btn {
+      opacity: 1;
+   }
+
+
+   .room-img {
+      padding: 30px;
+   }
+
+   .room-container {
       justify-content: space-between;
-      font-size: 20px;
+      z-index: 1;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      align-items: center;
    }
 
-   .room-name {
-      font-size: 70px;
-      margin-bottom: 40px;
+   .room-title,
+   .story,
+   .book-btn,
+   table {
+      opacity: 0;
    }
 
-   @keyframes pulse-down {
-      to {
-         transform: translateY(10px);
-      }
+   /* ARROWS */
+
+   .arrows {
+      width: 6rem;
+      position: absolute;
+      opacity: 1;
    }
 
-   @keyframes pulse-up {
-      to {
-         transform: translateY(-10px);
-      }
+   .previous {
+      bottom: 50%;
+      left: -12%;
+      transform: rotate(-90deg);
+   }
+
+   .next {
+      bottom: 50%;
+      right: -12%;
+      transform: rotate(-90deg);
    }
 
    .btn-previous:hover,
@@ -167,167 +245,121 @@ table tr td:last-child {
       animation: pulse-down 0.3s linear infinite alternate;
    }
 
-   .carousel-arrow {
-      position: absolute;
-      width: 80px;
-      height: 80px;
+   @keyframes pulse-down {
+      to {
+         transform: translateY(10px);
+      }
    }
 
-   .previous {
-      top: 0%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+   @keyframes pulse-up {
+      to {
+         transform: translateY(-10px);
+      }
    }
 
-   .next {
-      bottom: 0;
-      right: 50%;
-      transform: translate(50%, 50%);
+   .room-title {
+      margin: 4rem 0 1rem 0;
+      font-size: 2rem;
    }
 
-   .carousel-dots {
-      position: absolute;
-      left: 50%;
-      bottom: -20px;
-      transform: translate(-50%, 450%);
-      margin-top: 0;
-   }
-
-   .carousel-button {
-      border: none;
-      width: 150px;
-   }
-
-   .more-rooms-container {
+   .story {
       display: none;
    }
 
-   .active {
-      background-color: #A01110;
-   }
-}
-
-/* * MACBOOK PRO * */
-@media only screen and (min-width: 1280px) {
+   /* TABLE */
 
    td {
-      height: 50px;
+      font-size: 1.2rem;
+   }
+
+   .fear,
+   .difficulty {
+      width: 2rem;
+   }
+
+   /* BUTTON */
+
+   .book-btn {
+      padding: 1rem;
+      margin-bottom: 5rem;
    }
 }
 
-/* * IMAC */
-@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+/* * DESKTOPS * */
+@media only screen and (min-width: 1025px) {
+
+   .carousel {
+      width: 80%;
+      /* line-height: 2rem; */
+   }
+
+   .room-container {
+      width: 80%;
+   }
+
+   /* ARROWS */
+
+   .previous {
+      left: -20%;
+   }
+
+   .next {
+      right: -20%;
+   }
+
+   .room-title {
+      margin-top: 2rem;
+      font-size: 3rem;
+   }
+
+   /* TABLE */
+
+   table {
+      margin: 1.5rem 0 .8rem 0;
+   }
+
+   td {
+      font-size: 1.5rem;
+      width: 30rem;
+   }
+
+   .story {
+      font-size: 1.2rem;
+      display: inline;
+   }
+
+   /* BUTTON */
+
+   .book-btn {
+      margin: 0;
+   }
+}
+
+/* * TV * */
+@media only screen and (min-width: 1600px) and (max-width: 2560px) {
+
+   .carousel {
+      width: 60%;
+   }
 
    .room-container {
       width: 75%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
+   }
+
+   .previous {
+      left: -27%;
+   }
+
+   .next {
+      right: -27%;
    }
 
    td {
-      width: 600px
+      height: 4rem;
    }
 
-   .btn-next,
-   .btn-previous {
-      width: 100%;
-   }
-
-   .room-img-container {
-      width: 100%;
-   }
-
-   .room-img {
-      width: 100%;
-   }
-
-   .room-name {
-      font-size: 50px;
-      margin-bottom: 20px;
-   }
-
-   table {
-      border-collapse: collapse;
-      margin: 50px 0 50px 0;
-   }
-
-   td {
-      border: 1px solid rgb(255, 255, 255);
-      text-align: center;
-      vertical-align: middle;
-      height: 82px;
-      width: 300px;
-      font-size: 22px;
-   }
-
-   table tr:first-child td {
-      border-top: 0;
-   }
-
-   table tr:last-child td {
-      border-bottom: 0;
-   }
-
-   table tr td:first-child {
-      border-left: 0;
-   }
-
-   table tr td:last-child {
-      border-right: 0;
-   }
-
-   .carousel-button {
-      background-color: black;
-      font-size: 30px;
-      margin-bottom: 40px;
-      width: 50%;
-      cursor: pointer;
-      border-color: white;
-   }
-
-   .carousel-arrow {
-      background: none;
-      color: rgb(255, 255, 255);
-      border: none;
-      height: 70px;
-      width: 70px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   }
-
-   .more-rooms-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }
-
-   .more-rooms {
-      margin: 0 30px 0 30px;
-      font-size: 20px;
-   }
-
-   .carousel-dots {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px;
-      gap: 30px;
-      width: 100%;
-   }
-
-   .dot {
-      height: 16px;
-      width: 16px;
-      background-color: rgb(0, 0, 0);
-      border: 2px solid #A01110;
-      border-radius: 50%;
-      cursor: pointer;
-   }
-
-   .active {
-      background-color: #A01110;
+   .fear,
+   .difficulty {
+      width: 3rem;
    }
 }
