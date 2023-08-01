@@ -1,9 +1,9 @@
-/* * IPHONE * */
+/* * PHONES * */
 
 .gallery {
    display: flex;
    flex-direction: column;
-   width: 100%;
+   margin: 1rem auto 1rem auto;
 }
 
 .gallery-five,
@@ -14,32 +14,29 @@
    display: none;
 }
 
-.gallery-image {
-   margin-bottom: 50px;
+.gallery-img {
+   margin-bottom: 2.5rem;
+   width: 100%;
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
+/* * TABLETS * */
+@media only screen and (min-width: 481px) {
 
    .gallery {
-      width: 75%;
-      margin: 80px auto;
-      padding: 30px;
-      box-shadow: 0px 0px 50px 10px #A01110;
+      margin: 0 auto 2rem auto;
       display: grid;
-      gap: 50px;
+      gap: 1.5rem;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
    }
 
-   .gallery-image {
-      width: 100%;
+   .gallery-img {
       margin: 0 auto;
       transition: all 0.2s ease-in-out;
       cursor: pointer;
    }
 
-   .gallery-image:hover {
+   .gallery-img:hover {
       filter: brightness(50%);
    }
 
@@ -49,15 +46,22 @@
    }
 }
 
-/* * MACBOOK PRO * */
-@media only screen and (min-width: 1280px) {
+/* * LAPTOPS * */
+@media only screen and (min-width: 769px) {
 
    .gallery {
-      margin: 90px auto;
+      width: 90%;
+      box-shadow: 0 0 2rem .7rem #A01110;
+      padding: 1.5rem;
    }
+}
 
-   .gallery-image {
+/* * DESKTOPS * */
+@media only screen and (min-width: 1025px) {
+
+   .gallery {
       width: 80%;
+      margin: 3rem auto;
    }
 
    .gallery-seven,
@@ -66,13 +70,11 @@
    }
 }
 
-/* * IMAC */
-@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+/* * TV * */
+@media only screen and (min-width: 1600px) and (max-width: 2560px) {
 
    .gallery {
-      margin: 100px auto;
-      padding: 50px;
-      gap: 30px;
+      width: 60%;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
    }

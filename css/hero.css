@@ -1,4 +1,4 @@
-/* * IPHONE * */
+/* * PHONES * */
 
 .hero-img {
    width: 100%;
@@ -15,43 +15,55 @@
 }
 
 .hero-title {
-   font-size: 55px;
+   font-size: 3.5rem;
 }
 
 .hero-subtitle {
-   font-size: 18px;
-   margin-top: 20px;
+   font-size: 1.5rem;
+   margin-top: 1.5rem;
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
+/* * TABLETS * */
+@media only screen and (min-width: 481px) {
 
    .hero-title {
-      font-size: 65px;
+      font-size: 4rem;
    }
 
    .hero-subtitle {
-      font-size: 28px;
+      font-size: 2rem;
    }
 }
 
-/* * MACBOOK PRO * */
-@media only screen and (min-width: 1280px) {
+/* * LAPTOPS * */
+@media only screen and (min-width: 769px) {
 
    .hero-title {
-      font-size: 75px;
+      font-size: 4.5rem;
    }
 
    .hero-subtitle {
-      font-size: 38px;
+      font-size: 2.5rem;
    }
 }
 
-/* * IMAC */
-@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+/* * DESKTOPS * */
+@media only screen and (min-width: 1025px) {
+
+   .hero-title {
+      font-size: 5rem;
+   }
+
+   .hero-subtitle {
+      font-size: 3rem;
+   }
+}
+
+/* * TV * */
+@media only screen and (min-width: 1600px) and (max-width: 2560px) {
 
    .hero {
-      width: 100%;
+      width: 90%;
    }
 
    .hero-img {
@@ -59,10 +71,10 @@
    }
 
    .hero-title {
-      font-size: 85px;
+      font-size: 5.5rem;
    }
 
    .hero-subtitle {
-      font-size: 48px;
+      font-size: 3.5rem;
    }
 }

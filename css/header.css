@@ -1,4 +1,4 @@
-/* * IPHONE * */
+/* * PHONES * */
 
 header {
    display: flex;
@@ -15,16 +15,15 @@ header {
 }
 
 .title {
-   font-size: 22vw;
+   font-size: 6rem;
    font-family: 'KingsButcher';
    white-space: nowrap;
-   word-spacing: -20px;
+   word-spacing: -1rem;
 }
 
 .title-no {
    color: #A01110;
 }
-
 
 .nav {
    display: none;
@@ -35,11 +34,11 @@ header {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin-bottom: 20px;
+   margin-bottom: 1.2rem;
 }
 
 .nav-list {
-   padding: 15px;
+   padding: 1rem;
 }
 
 .nav-link {
@@ -48,33 +47,14 @@ header {
    position: relative;
    display: inline-block;
    font-family: Xtypewriter-Bold;
-   font-size: 25px;
+   font-size: 1.5rem;
    font-weight: bold;
-   letter-spacing: 10px;
-   margin-bottom: 20px;
+   letter-spacing: 0.6rem;
+   margin-bottom: 1.2rem;
    color: #f0f8ff;
 }
 
-.nav-link:hover:before {
-   left: -2px;
-   width: 100%;
-}
-
-@keyframes animate {
-   0% {
-      opacity: 0;
-      transform: translateY(-10px);
-   }
-
-   100% {
-      opacity: 1;
-      transform: translateY(0);
-   }
-}
-
 /* BURGER */
-
-
 .visually-hidden {
    position: absolute;
    overflow: hidden;
@@ -87,8 +67,7 @@ header {
 }
 
 .burger {
-   margin: 0 auto;
-   margin-top: 30px;
+   margin: 2rem auto 2rem auto;
    width: 30px;
    height: 30px;
    position: relative;
@@ -154,29 +133,57 @@ header {
    width: 42px;
 }
 
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
+/* * TABLETS * */
+@media only screen and (min-width: 481px) {
 
-   header {
-      margin: 30px 30px;
+   .title {
+      font-size: 7rem;
+   }
+
+   .nav {
+      display: none;
+   }
+
+   .nav-list {
+      padding: 1rem;
+   }
+}
+
+/* * LAPTOPS * */
+@media only screen and (min-width: 769px) {
+
+   .title {
+      font-size: 9rem;
    }
 
    .nav {
       display: block;
    }
 
+   .burger {
+      display: none;
+   }
+
    .nav-ul {
       display: flex;
       flex-direction: row;
-      gap: 40px;
+      gap: 1rem;
       justify-content: center;
       align-items: center;
       text-align: center;
       margin-bottom: 0;
    }
 
-   .nav-list {
-      padding: 45px 0 0 0;
+   @keyframes animate {
+      0% {
+         opacity: 0;
+         transform: translateY(-10px);
+      }
+
+      100% {
+         opacity: 1;
+         transform: translateY(0);
+      }
    }
 
    .nav-link:before {
@@ -190,44 +197,45 @@ header {
       transition: 0.2s ease;
    }
 
-   .burger {
-      display: none;
-   }
-}
-
-/* * MACBOOK PRO * */
-@media only screen and (min-width: 1280px) {
-
-   .title {
-      font-size: 16rem
-   }
-
-   .nav-ul {
-      display: flex;
-      gap: 20%;
+   .nav-link:hover:before {
+      left: -2px;
       width: 100%;
    }
 }
 
-/* * IMAC */
-@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+
+/* * DESKTOPS * */
+@media only screen and (min-width: 1025px) {
+
+   .title {
+      font-size: 11rem;
+   }
+
+   .nav-ul {
+      display: flex;
+      gap: 4.5rem;
+      width: 100%;
+   }
+}
+
+/* * TV * */
+@media only screen and (min-width: 1600px) and (max-width: 2560px) {
 
    header {
       display: flex;
       flex-direction: row;
-      /* gap: 25%; */
       justify-content: space-around;
       margin: 0;
    }
 
    .title {
       font-size: 10rem;
-      margin-bottom: 10px;
+      margin-bottom: 1.2rem;
    }
 
    .nav-ul {
       display: flex;
-      gap: 100px;
+      gap: 1.5rem;
    }
 
    .nav-list {

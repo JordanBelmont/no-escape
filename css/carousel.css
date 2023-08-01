@@ -20,8 +20,6 @@
    margin: 1rem auto 0 auto;
 }
 
-/* ARROWS */
-
 .arrow-container {
    display: flex;
    flex-direction: row;
@@ -53,14 +51,10 @@
    transform: rotate(-90deg);
 }
 
-/* TITLE */
-
 .room-title {
    font-size: 2em;
    line-height: 2.5rem
 }
-
-/* TABLE */
 
 table {
    border-collapse: collapse;
@@ -72,7 +66,7 @@ td {
    text-align: center;
    vertical-align: middle;
    height: 3rem;
-   width: 18rem;
+   width: 50%;
    font-size: 1em;
 }
 
@@ -96,23 +90,6 @@ table tr td:last-child {
 .difficulty {
    width: 1rem;
 }
-
-/* BUTTON */
-
-.book-btn {
-   background-color: transparent;
-   font-size: 1.5em;
-   font-family: Xtypewriter-Bold;
-   letter-spacing: 10px;
-   font-weight: bold;
-   margin: 1rem 0 1rem 0;
-   cursor: pointer;
-   border: none;
-   color: white;
-   white-space: nowrap;
-}
-
-/* DOTS */
 
 .carousel-dots {
    display: flex;
@@ -140,14 +117,11 @@ table tr td:last-child {
 
    .carousel {
       margin: 0 auto 2rem auto;
-      width: 100%;
    }
 
    .room-container {
       width: 90%;
    }
-
-   /* ARROWS */
 
    .arrows {
       width: 5rem;
@@ -156,8 +130,6 @@ table tr td:last-child {
    .room-title {
       font-size: 2.5rem;
    }
-
-   /* TABLE */
 
    table {
       margin: 1.5rem 0 1.5rem 0;
@@ -186,13 +158,12 @@ table tr td:last-child {
    .carousel:hover .room-title,
    .carousel:hover .story,
    .carousel:hover table,
-   .carousel:hover .book-btn {
+   .carousel:hover .booking-container {
       opacity: 1;
    }
 
-
    .room-img {
-      padding: 30px;
+      padding: 1.5rem;
    }
 
    .room-container {
@@ -208,12 +179,10 @@ table tr td:last-child {
 
    .room-title,
    .story,
-   .book-btn,
-   table {
+   table,
+   .booking-container {
       opacity: 0;
    }
-
-   /* ARROWS */
 
    .arrows {
       width: 6rem;
@@ -266,8 +235,6 @@ table tr td:last-child {
       display: none;
    }
 
-   /* TABLE */
-
    td {
       font-size: 1.2rem;
    }
@@ -277,9 +244,7 @@ table tr td:last-child {
       width: 2rem;
    }
 
-   /* BUTTON */
-
-   .book-btn {
+   .booking-container {
       padding: 1rem;
       margin-bottom: 5rem;
    }
@@ -290,14 +255,12 @@ table tr td:last-child {
 
    .carousel {
       width: 80%;
-      /* line-height: 2rem; */
+      margin: 3rem auto;
    }
 
    .room-container {
       width: 80%;
    }
-
-   /* ARROWS */
 
    .previous {
       left: -20%;
@@ -311,8 +274,6 @@ table tr td:last-child {
       margin-top: 2rem;
       font-size: 3rem;
    }
-
-   /* TABLE */
 
    table {
       margin: 1.5rem 0 .8rem 0;
@@ -328,9 +289,7 @@ table tr td:last-child {
       display: inline;
    }
 
-   /* BUTTON */
-
-   .book-btn {
+   .booking-container {
       margin: 0;
    }
 }

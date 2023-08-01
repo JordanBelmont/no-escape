@@ -1,4 +1,4 @@
-/* * IPHONE * */
+/* * PHONES * */
 
 body {
    background-color: black;
@@ -8,63 +8,49 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin: 20px;
+   margin: 1.2rem;
+   ;
 }
 
 .heading {
-   font-family: Xtypewriter-Bold;
-   font-size: 40px;
+   font-size: 2.5rem;
    font-weight: bold;
-   letter-spacing: 5px;
+   letter-spacing: 0.2rem;
    text-align: center;
-   margin: 150px 0 50px 0;
+   margin: 5rem 0 2rem 0;
 }
 
-hr {
-   margin: 50px 0 30px 0;
-   width: 100%;
-   border: 1px solid #A01110;
-}
 
-/* 
-body h1:first-of-type {
-   margin-top: 250px;
-} */
-
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
+/* * TABLETS * */
+@media only screen and (min-width: 481px) {
 
    .heading {
-      margin: 50px 0 30px 0;
-      font-size: 50px;
-   }
-
-   /* 
-   body h1:first-of-type {
-      margin-top: 200px;
-   } */
-
-   hr {
-      margin: 100px 0 30px 0;
+      font-size: 3rem;
    }
 }
 
-/* * MACBOOK PRO * */
-@media only screen and (min-width: 1280px) {
-
-   /* body h1:first-of-type {
-      margin-top: 300px;
-   } */
-}
-
-/* * IMAC */
-@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+/* * LAPTOPS * */
+@media only screen and (min-width: 769px) {
 
    .heading {
-      margin-top: 210px;
+      margin: 5rem 0 3rem 0;
+      font-size: 3rem;
    }
+}
 
-   /* body h1:first-of-type {
-      margin-top: 400px;
-   } */
+/* * DESKTOPS * */
+@media only screen and (min-width: 1025px) {
+
+   .heading {
+      margin: 6rem 0 0.5rem 0;
+      font-size: 4rem;
+   }
+}
+
+/* * TV * */
+@media only screen and (min-width: 1600px) and (max-width: 2560px) {
+
+   .heading {
+      margin-top: 13rem;
+   }
 }

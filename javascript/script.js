@@ -18,6 +18,7 @@ let players = document.getElementById('players');
 let previous = document.getElementById('previous');
 let next = document.getElementById('next');
 
+
 let dots = document.getElementById('dots');
 
 // GLOBAL VALUES

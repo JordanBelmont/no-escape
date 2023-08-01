@@ -1,8 +1,11 @@
-/* * IPHONE * */
+/* * PHONES * */
 
 .testimonial {
    display: flex;
    flex-direction: column;
+   margin: 1rem auto 1rem auto;
+   font-size: 1.2rem;
+   line-height: 1.5rem;
 }
 
 .testimonial-four {
@@ -10,11 +13,10 @@
 }
 
 .testimonial-container {
-   border: 2px solid #A01110;
-   margin-bottom: 50px;
-   padding: 22px;
+   border: 0.1rem solid #A01110;
+   margin-bottom: 3rem;
+   padding: 1.5rem;
    position: relative;
-   line-height: 1.6;
 }
 
 .testimonial-container-long {
@@ -22,13 +24,11 @@
 }
 
 .testimonial-quote {
-   text-indent: 2em;
+   text-indent: 2rem;
 }
 
 .testimonial-name {
-   padding-top: 15px;
-   text-indent: 0;
-   font-size: 15px;
+   padding-top: 1rem;
 }
 
 .guestbook-container {
@@ -38,23 +38,16 @@
    width: 100%;
 }
 
-
-/* * IPAD * */
-@media only screen and (min-width: 768px) {
+/* * TABLETS * */
+@media only screen and (min-width: 481px) {
 
    .testimonial {
-      width: 75%;
-      margin: 80px auto;
-      padding: 30px;
-      box-shadow: 0px 0px 50px 10px #A01110;
-      font-size: 20px;
-      line-height: 1.6;
-      color: white;
+      margin: 0 auto 2rem auto;
       position: relative;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 32px;
+      gap: 1.5rem;
    }
 
    .testimonial-three {
@@ -62,8 +55,8 @@
    }
 
    .testimonial-container {
-      width: 75%;
-      margin: 30px auto;
+      width: 100%;
+      margin: 0 auto;
    }
 
    .testimonial-container::after,
@@ -73,7 +66,7 @@
       content: '';
       position: absolute;
       font-family: fontAwesome;
-      font-size: 50px;
+      /* font-size: 50px; */
       color: rgb(255, 255, 255);
       background-color: rgb(0, 0, 0);
    }
@@ -97,16 +90,23 @@
    }
 }
 
-/* * MACBOOK PRO * */
-@media only screen and (min-width: 1280px) {
+/* * LAPTOPS * */
+@media only screen and (min-width: 769px) {
+   .testimonial {
+      width: 90%;
+      box-shadow: 0 0 2rem .7rem #A01110;
+      padding: 1.5rem;
+   }
+}
+
+/* * DESKTOPS * */
+@media only screen and (min-width: 1025px) {
 
    .testimonial {
-      margin: 90px auto;
+      width: 80%;
+      margin: 3rem auto;
       display: flex;
-   }
-
-   .testimonial-three {
-      display: none;
+      gap: 3rem
    }
 
    .testimonial-four {
@@ -114,27 +114,24 @@
    }
 
    .testimonial-container {
-      width: 400px;
-      border: 2px solid #A01110;
-      margin: 30px auto;
-      padding: 22px;
+      border: .1rem solid #A01110;
+      padding: 1rem;
       position: relative;
    }
 
    .testimonial-container-long {
       display: block;
-      border: 2px solid #A01110;
-      margin: 30px auto;
-      padding: 22px;
+      border: .1rem solid #A01110;
+      padding: 1rem;
       position: relative;
    }
 }
 
-/* * IMAC */
-@media only screen and (min-width: 1537px) and (max-width: 2560px) {
+/* * TV * */
+@media only screen and (min-width: 1600px) and (max-width: 2560px) {
 
    .testimonial {
-      margin: 100px auto;
+      width: 60%;
    }
 
    .testimonial-three {
@@ -142,12 +139,11 @@
    }
 
    .testimonial-container {
-      margin: 50px auto;
+      width: 20rem;
    }
 
    .testimonial-container-long {
       width: 90%;
-      margin: 25px auto;
-      padding: 20px;
+      margin: 0 auto;
    }
 }
